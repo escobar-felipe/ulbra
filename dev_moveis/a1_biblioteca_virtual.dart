@@ -1,4 +1,5 @@
 class Book {
+ // books
   String title;
   String author;
   int year;
@@ -18,12 +19,14 @@ class VirtualLibrary {
   List<Book> get books => _books;
 
   void addBook(String title, String author, int year, String genre) {
+     // add books
     Book newBook = Book(title, author, year, genre);
     _books.add(newBook);
     print("Book '$title' added successfully!");
   }
 
   void removeBookByTitle(String title) {
+     // remove books
     int initialLength = _books.length;
     _books.removeWhere((book) => book.title == title);
     if (_books.length < initialLength) {
@@ -34,6 +37,7 @@ class VirtualLibrary {
   }
 
   void listBooks() {
+    // list books
     if (_books.isEmpty) {
       print("The library is empty.");
     } else {
