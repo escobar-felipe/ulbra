@@ -6,8 +6,8 @@ type BoxProps = {
 
 const Box: React.FC<BoxProps> = ({ text }) => {
   return (
-    <div className="box">
-      <p className="box-text">{text}</p>
+    <div>
+      <p>{text}</p>
     </div>
   );
 };
