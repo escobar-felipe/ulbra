@@ -1,9 +1,10 @@
 import "./App.css";
+import Box from "./components/Box";
 
 function App() {
   return (
     <>
-      <p>Hello, Ulbra</p>
+      <Box text={"Hello, Ulbra"} />
     </>
   );
 }
